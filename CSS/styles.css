@@ -5,15 +5,51 @@
     box-sizing: border-box;
 }
 
+/* Defino variables para colores*/
+
 :root {
     --backgroundBody: rgb(0,50,83);
     --backgroundHeader: rgb(225, 227, 230);
     --colorText: #f3ece3;
+    --colorboton:  #007bff;
+    --colorbotonhover: #0056b3;
+    --textooscuro: #0056b3;
 }
 
+/* establezco el font descargado de google para todos los textos de la página */
 body {
-    background-color: var(--backgroundBody);
+  font-family: "DM Sans", sans-serif;
+  font-weight: 400; /* peso entre 100 y 1000. */
+  font-style: normal; /* Ejemplo: estilo normal */
+  /font-optical-sizing: auto; 
 }
+
+/* Defino h1, h2, h3 y h4 con tipo de fuente*/
+
+h1 {
+    font-size: 2rem;
+    color: var(--colorText);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);    
+}
+
+h2 {
+    font-size: 1.75rem;
+    color: var(--colorText);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);    
+}
+
+h3 {
+    font-size: 1.50rem;
+    color: var(--colorText);
+    margin: 0.5rem 0;
+}
+
+h4 {
+    color: var(--colorText);
+    margin: 0.5rem 0;
+}
+
+
 
 /* Estilos del header */
 header {
@@ -66,20 +102,21 @@ header {
 }
 
 .nav-button {
-    background-color: #007bff;
+    background-color: var(--colorboton); 
     color: white;
     border: none;
     padding: 0.8rem 1.5rem;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    text-decoration: none;
 }
 
 .nav-button:hover {
-    background-color: #0056b3;
+    background-color: var(--colorbotonhover);
 }
 
-/* Fondo de pantalla  */
+/* Fondo de pantalla header */
 section.encabezado {
     background-image: url('../assets/pictures/Panoramica.jpg');
     background-size: cover;
@@ -94,42 +131,19 @@ section.encabezado {
     justify-content: center;
 }
 
+main h1 {
+    margin: 2rem 0;  
+}
+
 main h2 {
-    margin: 5rem 0;
-    font-size: 2rem;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    
+    margin: 5rem 0;   
 }
 
-/* Estilos del formulario*/
-form {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    margin: 2rem 0;
-    flex-wrap: wrap;
+/* Color del fondo de pantalla general */
+body {
+    background-color: var(--backgroundBody);
 }
 
-form input {
-    padding: 0.8rem;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    min-width: 250px;
-}
-
-form button {
-    padding: 0.8rem 1.5rem;
-    background-color: #4390e7;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-form button:hover {
-    background-color: #254bb3;
-}
 
 /* Estilos de la seccion de productos */
 section {
@@ -149,7 +163,8 @@ section h2 {
     gap: 2rem;
     justify-items: center;
     justify-content: center;
-    margin-top: 2rem;
+    margin-top: 2re
+    m;
 }
 /* Estilos de las tarjetas de los productos */
 
@@ -183,7 +198,7 @@ section h2 {
 }
 
 .card h3 {
-    color: var(--colorText);
+    color: var(--textooscuro);
     margin: 0.5rem 0;
 }
 
@@ -193,7 +208,7 @@ section h2 {
 }
 
 .card button {
-    background-color: #007bff;
+    background-color: var(--colorboton); 
     color: white;
     border: none;
     padding: 0.8rem 1rem;
@@ -204,7 +219,181 @@ section h2 {
 }
 
 .card button:hover {
-    background-color: #0056b3;
+    background-color: var(--colorbotonhover);
+}
+
+/* -------- */
+
+/* Estilos de las tarjetas de ubicaciones */
+
+.destinos {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 2rem;
+    justify-items: center;
+    justify-content: center;
+    margin-top: 2re
+    m;
+}
+
+.card2 {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    border: 1px solid var(--colorText);
+    background-color: var(--backgroundHeader);
+    border-radius: 20px;
+    transition: transform 0.3s ease;
+    padding: 1rem;
+    text-align: center;
+}
+
+.card2:hover {
+    transform: scale(1.05);
+}
+
+.card2 a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.card2 img {
+    width: 100%;
+    height: 120px;
+    object-fit: contain;
+    margin: 1rem 0;
+}
+
+.card2 h3 {
+    color: var(--textooscuro);
+    margin: 0.5rem 0;
+}
+
+.card2 p {
+    color: #666;
+    margin: 0.5rem 0;
+}
+
+/* Estilos de las tarjeta de nosostros */
+
+.nosotros {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
+    gap: 2rem;
+    justify-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+    text-align: left;
+
+}
+
+
+
+/* Estilos de las tarjetas de asistencia*/
+
+.emergencias {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
+    gap: 2rem;
+    justify-items: center;
+    justify-content: center;
+    margin-top: 2re
+    m;
+}
+
+.card3 {
+    width: 60%;
+    max-width: 90%;
+    height: auto;
+    border: 1px solid var(--colorText);
+    background-color: var(--backgroundBody);
+    border-radius: 20px;
+    transition: transform 0.3s ease;
+    padding: 1rem;
+    text-align: center;
+}
+
+  /* Estilos generales del formulario */
+
+.form {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.form form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Contenedor para los campos en línea */
+.form-row {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-width: 200px;
+}
+
+/* Estilos para labels */
+.form label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: var(--colorText);
+}
+
+/* Estilos para inputs y textarea */
+.form input,
+.form textarea {
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+.form input:focus,
+.form textarea:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.1);
+}
+
+/* Grupo específico para el mensaje */
+.message-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.message-group textarea {
+    resize: vertical;
+    min-height: 200px;
+}
+
+/* Botón de envío */
+.form button {
+    padding: 12px 30px;
+    background-color: var(--colorboton); 
+    color: var(--colorText);
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    align-self: flex-start;
+}
+
+form button:hover {
+    background-color: var(--colorbotonhover);
 }
 
 /* Estilos del pie de página */
