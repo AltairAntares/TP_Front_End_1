@@ -3,146 +3,328 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Let´s Drive</title>
+    <title>Snackear Argentina</title>
+    <!-- css bootstrap para carrousel-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./CSS/styles.css">
-
     <!-- Fonts de googole -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
-
+    
 </head>
 
 <body>
     <header>
+        
         <div class="logo-container">
-            <img src="./assets/pictures/Lets_Drive.png" alt="Logo de la empresa" class="logo-image">
+            <img src="./assets/pictures/Snackear_logo_3.png" alt="Logo de la empresa" class="logo-image">
         </div>
+        
+   
         <nav class="navbar">
             <div class="nav-container">
                 <ul class="nav-menu">
                     <li class="nav-item">
-                        <a href="#inicio" class="nav-button">Inicio</a>
+                        <a href="#Productos" class="nav-button">Productos</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#vehiculos" class="nav-button">Vehículos</a>
+                        <a href="#sucursales" class="nav-button">Sucursales</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#destinos" class="nav-button">Destinos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#emergencias" class="nav-button">Emergencias</a>
+                        <a href="#nosotros" class="nav-button">Nosotros</a>
                     </li>
                     <li class="nav-item">
                         <a href="#contacto" class="nav-button">Contacto</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#nosotros" class="nav-button">Nosotros</a>
+                        <i class="bi bi-cart"></i> 
+                        <a class="nav-button" id="cartBoton">Mi carro 
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                            <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                            </svg>
+                        </a>    
                     </li>
                 </ul>
-            </div>
+             
+
         </nav>
     </header>
 
     <main>
 
         <!-- Aca comienza la sección superior de encabezado -->
+        <!-- Inicio del carrousel -->
 
-        <section class="encabezado">
-        
-            <h1>Bienvenido al primer sitio de alquiler de vehículos off road!!!</h1>
-            <h2>Tu Aventura Comienza Aquí, Let´s Drive!!!</h2>
-            <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-        </section>
-        <!-- Aca comienza la sección de seleccion de vehículos -->
+
+
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./assets/pictures/Slide_1.png" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>SNAKEAR Argentina</h5>
+              <p>Somos una empresa lider en la comercialización de snacks saludables.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./assets/pictures/Slide_2.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>SNAKEAR Argentina</h5>
+              <p>Garantizamos la calidad de nuestros productos mediante estrictas normas de calidad.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./assets/pictures/Slide_3.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>SNAKEAR Argentina</h5>
+              <p>Priorizamos productos de origen nacional.</p>
+            </div>
+          </div>
+
+
+
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+  </div>
+  <!-- Fin del carrousel -->
+
+  
+        <!-- Aca comienza la sección de seleccion de frutos secos -->
         <hr>
-        <h5 id="vehiculos"></h5>
+        <br>
+        
+        <h5 id="Productos"></h5>
+         <video autoplay loop muted playsinline id="video-background">
+            <source src="./assets/videos/choco (7).mp4" type="video/mp4">
+                    Tu navegador no soporta la etiqueta de video.
+        </video>
         <section>
-            <h2>Elige el mejor vehículo para tu aventura</h2>
-            <br>
+            <h2>Nuestros productos</h2>
+            
             <div class="product">
 
-                <div class="card">
+                <div class="card" data-id="producto_0001" >
+                    <h3>Nueces</h3>
+                    <img src="./assets/pictures/Nueces_2.jpg" alt="">
+                    <p>Nueces sin pelar en bolsas de 500 gr.</p>
+                    <h4 precio>$ 10000,00</h4>
+                    <br>
                     <a href="./pages/auto.html">
-                    <h3>Automoviles</h3>
-                    <img src="./assets/pictures/Auto.png" alt="">
-                    <p>Vehiculos urbanos</p>
-                    <button>Ver más</button>
+                    <button>Comprar  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                            <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                            </svg></button>
                     </a>
                 </div>
 
-                <div class="card">
-                    <a href="./pages/camioneta4x4.html">
-                    <h3>Vehículos 4 x 4</h3>
-                    <img src="./assets/pictures/4x4.png" alt="">
-                    <p>Vehículos todo terreno</p>
-                    <button>Ver más</button>
+                <div class="card" data-id="producto_0002">
+                    <h3>Almendras</h3>
+                    <img src="./assets/pictures/Almendras_1.jpg" alt="">
+                    <p>Almendras peladas y tostadas en bolsas de 500 gr.</p>
+                    <h4 precio>$ 12000,00</h4>
+                    <br>
+                    <a href="./pages/auto.html">
+                    <button>Comprar  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                            <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                            </svg></button>
                     </a>
                 </div>
 
-                <div class="card">
-                    <a href="./pages/utilitario.html">
-                    <h3>Minibuses</h3>
-                    <img src="./assets/pictures/Minibus.png" alt="">
-                    <p>Vehículos de pasajeros</p>
-                    <button>Ver más</button>
+                <div class="card" data-id="producto_0003">
+                    <h3>Avellanas</h3>
+                    <img src="./assets/pictures/Avellanas_1.jpg" alt="">
+                    <p>Avellanas peladas y tostadas en bolsas de 250 gr.</p>
+                    <h4 precio>$ 8500,00</h4>
+                    <br>
+                    <a href="./pages/auto.html">
+                    <button>Comprar  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                            <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                            </svg></button>
                     </a>
                 </div>
 
-                <div class="card">
-                    <a href="./pages/motorhome.html">
-                    <h3>Motorhomes</h3>
-                    <img src="./assets/pictures/Motorhome.png" alt="">
-                    <p>Vehículos vivienda</p>
-                    <button>Ver más</button>
+                <div class="card" data-id="producto_0004">
+                    <h3>Pistachos</h3>
+                    <img src="./assets/pictures/Pistachos_1.jpg" alt="">
+                    <p>Pistachos sin pelar en bolsas de 250 gr.</p>
+                    <h4 precio>$ 8000,00</h4>
+                    <br>
+                    <a href="./pages/auto.html">
+                    <button>Comprar  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                            <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                            </svg></button>
                     </a>
                 </div>
 
-                <div class="card">
-                    <a href="./pages/motocicleta.html">
-                    <h3>Motocicletas</h3>
-                    <img src="./assets/pictures/Motocicleta.png" alt="">
-                    <p>Adrenalina en 2 ruedas</p>
-                    <button>Ver más</button>
+                <div class="card" data-id="producto_0005">
+                    <h3>Castañas de cajú</h3>
+                    <img src="./assets/pictures/Caju_1.jpg" alt="">
+                    <p>Castañas de cajú peladas en bolsas de 250gr.</p>
+                    <h4 precio>$ 4000,00</h4>
+                    <br>
+                    <a href="./pages/auto.html">
+                    <button>Comprar  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                            <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                            </svg></button>
                     </a>
                 </div>
 
-                <div class="card">
-                    <a href="./pages/cuatriciclo.html">
-                    <h3>Cuatriciclos</h3>
-                    <img src="./assets/pictures/Cuatriciclo.png" alt="">
-                    <p>Adrenalina en 4 ruedas</p>
-                    <button>Ver más</button>
+                <div class="card" data-id="producto_0006">
+                    <h3>Maní</h3>
+                    <img src="./assets/pictures/Mani_1.jpg" alt="">
+                    <p>Maní tostado sin pelar en bolsas de 500 gr.</p>
+                    <h4 precio>$ 3000,00</h4>
+                    <br>
+                    <a href="./pages/auto.html">
+                    <button>Comprar  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                            <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                            </svg></button>
                     </a>
-            </div>
+                </div>
+                
+                <div class="card" data-id="producto_0007">
+                    <h3>Frutillas</h3>
+                    <img src="./assets/pictures/Frutillas_1.jpg" alt="">
+                    <p>Frutillas congeladas en bolsas de 500 gr.</p>
+                    <h4 precio>$ 6000,00</h4>
+                    <br>
+                    <a href="./pages/auto.html">
+                    <button>Comprar  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                            <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                            </svg></button>
+                    </a>
+                </div>
+                                
+                <div class="card" data-id="producto_0008">
+                    <h3>Arandanos</h3>
+                    <img src="./assets/pictures/Arandanos_1.jpg" alt="">
+                    <p>Arandanos congelados en bolsas de 500 gr.</p>
+                    <h4 precio>$ 8000,00</h4>
+                    <br>
+                    <a href="./pages/auto.html">
+                    <button>Comprar  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                            <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                            </svg></button>
+                    </a>
+                </div>
+                                
+                <div class="card" data-id="producto_0009">
+                    <h3>Frambuesas</h3>
+                    <img src="./assets/pictures/Frambuesas_1.jpg" alt="">
+                    <p>Frambuesas congeladas en bolsas de 500 gr.</p>
+                    <h4 precio>$ 10000,00</h4>
+                    <br>
+                    <a href="./pages/auto.html">
+                    <button>Comprar  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                            <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                            </svg></button>
+                    </a>
+                </div>
+                                
+                <div class="card" data-id="producto_0010">
+                    <h3>Chips de chocolate negro</h3>
+                    <img src="./assets/pictures/Chips_1.jpg" alt="">
+                    <p>Chips de chocolate negro en bolsas de 500 gr.</p>
+                    <h4 precio>$ 25000,00</h4>
+                    <br>
+                    <a href="./pages/auto.html">
+                    <button>Comprar  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                            <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                            </svg></button>
+                    </a>
+                </div>
+                                
+                <div class="card" data-id="producto_0011">
+                    <h3>Chips de chocolate blanco</h3>
+                    <img src="./assets/pictures/Chips_blanc.jpg" alt="">
+                    <p producto>Chips de chocolate blanco en bolsas de 500 gr.</p>
+                    <h4 precio>$ 22000,00</h4>
+                    <br>
+                    <a href="./pages/auto.html">
+                    <button>Comprar  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                            <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                            </svg></button>
+                    </a>
+                </div>
+                                
+                <div class="card" data-id="producto_0012">
+                    <h3>Chocolate en barra</h3>
+                    <img src="./assets/pictures/Choc_bar.jpg" alt="">
+                    <p>Barra de chocolate 60% cacao de 500 gr.</p>
+                    <h4 precio>$ 27000,00</h4>
+                    <br>
+                    <a href="./pages/auto.html">
+                    <button>Comprar  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                            <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                            </svg></button>
+                    </a>
+                </div>
         </section>
+
+               <!-- Luego borrar este listado una vez solucionado lo del carrito--> 
+
+        <button id="cartBoton">Mostrar Lista</button>
+
+<div id="miVentanaEmergente" class="ventana-emergente">
+  <div class="contenido">
+    
+    <h2>Mi Lista</h2>
+    <ul>
+      <li>Elemento 1</li>
+      <li>Elemento 2</li>
+      <li>Elemento 3</li>
+    </ul>
+    <button id="cerrarVentana">Cerrar</button>
+  </div>
+</div>
+
+<div id="carrito">
+ <h2>Carrito de Compras</h2>
+ <ul id="lista-carrito"></ul>
+ <button id="vaciar-carrito">Vaciar Carrito</button>
+</div>
+
 
             <!-- Aqui comienza el sector de ubicaciones con Iframes insertando mapas de google maps -->
         <br><br>
         <hr>
         <section>      
     
-            <h5 id="destinos"></h5>
-            <br>
-            <h2>Nuestros hubs, tus destinos.</h2>
+            <h5 id="sucursales"></h5>
+                     <video autoplay loop muted playsinline id="video-background">
+            <source src="./assets/videos/choco (7).mp4" type="video/mp4">
+                    Tu navegador no soporta la etiqueta de video.
+        </video>
+            <h2>Nuestras sucursales</h2>
             <br>
             <div class="destinos">
                 <div class="card2">
                     <h3>Bariloche</h3>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d16998.467804993787!2d-71.28984435871672!3d-41.13598935512029!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x961a7bc1a5904963%3A0xd4aab15d36a08a3d!2sKm%200%20Rent%20a%20Car!5e0!3m2!1ses!2sar!4v1748131907749!5m2!1ses!2sar" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <h3>Shoping Patagonia</h3>
+                    <img src="./assets/pictures/Local_4.jpg" alt="">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3004.8689010433222!2d-71.29968050625402!3d-41.13738779032527!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sar!4v1752072160004!5m2!1ses!2sar" width="350" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                
                 </div>
                 <div class="card2">
-                    <h3>El Chalten</h3>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2600.0786446151205!2d-72.88656201470666!3d-49.33172984253195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xbdbd03e3a94bdd23%3A0x139addc148aac265!2sAndreas%20Madsen%201-99%2C%20Z9301%20El%20Chalten%2C%20Santa%20Cruz!5e0!3m2!1ses!2sar!4v1748131700242!5m2!1ses!2sar" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <h3>Ciudad de Buenos Aires</h3>
+                    <h3>Mercado de Belgrano</h3>
+                    <img src="./assets/pictures/Local_3.jpg" alt="">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d522.4606408918407!2d-58.45808027067148!3d-34.562793469862065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb5d4700f074f%3A0x7dc83b852e98f0fe!2sMercado%20de%20Belgrano!5e0!3m2!1ses!2sar!4v1752074460212!5m2!1ses!2sar" width="350" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
-                <div class="card2">
-                    <h3>Caviahue</h3>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d2648.2874634459163!2d-71.05340170584815!3d-37.875209230147924!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzfCsDUyJzI2LjEiUyA3McKwMDMnMTEuMSJX!5e0!3m2!1ses!2sar!4v1748132175590!5m2!1ses!2sar" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-                <div class="card2">
-                    <h3>San Martín de los Andes</h3>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3049.3474023353683!2d-71.35533855904751!3d-40.15681823327191!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x96110f17b95549f3%3A0x27c9e855d286bb16!2sHotel%20%26%20Spa%20La%20Chemin%C3%A9e!5e0!3m2!1ses!2sar!4v1748132013512!5m2!1ses!2sar" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
+
             </div>    
 
         </section>
@@ -151,31 +333,34 @@
         <hr>
         <!-- Aca comienza la sección con informacion de la empresa-->
      
-    
+        <div class="video">
+            <video autoplay loop muted playsinline id="video-background">
+                <source src="./assets/videos/choco (2).mp4" type="video/mp4">
+                    Tu navegador no soporta la etiqueta de video.
+                </video>
+        </div>
+
         <h5 id="nosotros"></h5>
-        br
-        <section>
-            <h2>Abróchate el cinturón, la aventura te espera. Let's Drive!!!</h2>
+         <video autoplay loop muted playsinline id="video-background">
+            <source src="./assets/videos/choco (7).mp4" type="video/mp4">
+                    Tu navegador no soporta la etiqueta de video.
+        </video>        <section>
+            <h2>Snackear, el origen del sabor</h2>
             <div class="nosotros">
+
                 <div class="section">
-                    <h3>NOSOTROS</h3>
-                    <h4>Somos "Let's Drive!!!", una nueva empresa de alquiler de vehículos con sede en Buenos Aires, Argentina, pensada para espíritus aventureros, gente joven y familias que buscan explorar sin límites. Nos especializamos en ofrecer una flota diversa y robusta, ideal para el turismo de aventura en cada rincón del país.</h4>
-                    <h4>En Let's Drive entendemos la pasión por descubrir y la necesidad de contar con un compañero de viaje fiable y preparado para cualquier desafío. Nuestra propuesta se centra en vehículos que van más allá de lo convencional: desde potentes vehículos todo terreno y utilitarios listos para conquistar caminos difíciles, hasta confortables motorhomes que se convierten en un hogar en movimiento, y ágiles cuatriciclos 4x4 para la máxima diversión off-road.</h4>
+                    <h3>Tesoros de nuestra Patagonia</h3>
+                    <h4>Bienvenidos. Nacimos de una convicción: los mejores sabores tienen una historia y un origen que merecen ser contados. Somos más que una empresa de snacks saludables; somos un puente directo entre la pureza de la naturaleza y tu bienestar. Te invitamos a un viaje que empieza en el sur del mundo y culmina en la palma de tu mano.</h4>
                 </div>
 
                 <div class="section">
-                    <h3>MISIÓN</h3>
-                    <h4>Facilitar experiencias inolvidables de turismo aventura, permitiendo a nuestros clientes diseñar su propia ruta y vivir la aventura a su medida. Proporcionamos vehículos especializados y el asesoramiento necesario para que solo se preocupen por disfrutar del viaje, garantizando seguridad, comodidad y el equipamiento adecuado para cada tipo de exploración.</h4>
+                    <h3>El Arte del Chocolate con Alma Latinoamericana</h3>
+                    <h4>Creemos en la maestría de nuestros artesanos. Por eso, nuestros chocolates son elaborados en Argentina por manos expertas que transforman el mejor cacao del mundo en una experiencia única. Seleccionamos cuidadosamente granos de origen venezolano, ecuatoriano y brasileño, reconocidos por su perfil aromático excepcional, para crear tabletas y bocadillos que honran tanto el cacao como el arte chocolatero.</h4>
                 </div>
 
                 <div class="section">
-                    <h3>VISIÓN</h3>
-                    <h4>Ser la empresa líder en alquiler de vehículos para turismo de aventura en Argentina, reconocida por ofrecer experiencias únicas y memorables a exploradores de todas las edades, desde jóvenes aventureros hasta familias intrépidas que buscan descubrir nuevos horizontes.</h4>
-                </div>
-
-                <div class="section">
-                    <h3>NUESTRO COMPROMISO</h3>
-                    <h4>Creemos que la aventura es para todos. Por eso, nos comprometemos a asesorar personalmente a cada cliente para que elija la mejor opción según sus necesidades y las de su grupo. Ya sea que planees un recorrido por la montaña, una escapada a la playa por caminos agrestes o una travesía por el bosque, garantizamos que encontrarás el vehículo perfecto adaptado a tu aventura.</h4>
+                    <h3>Nuestro compromiso</h3>
+                    <h4>Nuestra prioridad es absoluta: ofrecerte un producto natural de calidad insuperable. Para nosotros, la trazabilidad no es una opción, es nuestra promesa. Conocemos a nuestros productores, seguimos el recorrido de cada fruto y cada grano, y nos aseguramos de que solo lo mejor llegue a tu mesa. Porque saber de dónde viene lo que comés, cambia por completo su sabor.</h4>
                 </div>
 
             </div>
@@ -184,32 +369,15 @@
 
                 <br>
         <hr>
-        <!-- Aca comienza la sección con informacion de cotacto de emergencia-->
-     
-    
-        <h5 id="emergencias"></h5>
-        br
-        <section>
-            <h2>Contacto de emergencia / Auxilio mecánico</h2>
-            <h3>Desde cualquier parte del país comunicate con los siguientes números:</h3>
-            <div class="emergencias">
-                <br>
-                <div class="card3">
-                    <img src="./assets/pictures/aux_mec.png" alt="" height="100px">
-                    <h3>Centro de atención por auxilio mecánico: 0810-444-4650</h3>
-                </div>
-                <div class="card3">
-                    <img src="./assets/pictures/aux_med.png" alt="" height="100px">
-                    <h3>Centro de atención de emergéncias por siniestros: 0810-444-4652</h3>
-                </div>
-            </div>
-        </section>
-        <br><br>
-
+        
            <!-- Aca comienza la sección de formulario de contacto -->
        
         <hr>
         <h5 id="contacto"></h5>
+                 <video autoplay loop muted playsinline id="video-background">
+            <source src="./assets/videos/choco (7).mp4" type="video/mp4">
+                    Tu navegador no soporta la etiqueta de video.
+        </video>
         <section>
             <h2>Dejanos tu consulta y te responderemos a la brevedad.</h2>
                 <div class="form">
@@ -243,6 +411,14 @@
                     </form>
                 </div>
         </section>
+
+
+ <!-- boton Sticky para volver al inicio desde cualquier sitio de la pagina-->
+        <div class="sticky" id="sticky-btn">
+        <button onclick="scrollToTop()">Inicio</button>
+        </div>
+
+
     </main>
 
     <footer>
@@ -281,7 +457,18 @@
         </div>
 
 
-        <p>© 2025 "Todos los derechos reservados por Let´s Drive international Company</p>
+        <p>© 2025 "Todos los derechos reservados por Snackear Argentina"</p>
     </footer>
+
+    <script src="./JS/TEST.JS"></script>
+    <script src="./JS/Sticky.js"></script>
+    <script src="./JS/carrito.js"></script>
+
+
 </body>
+
+
+
+
+
 </html>
