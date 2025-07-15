@@ -22,7 +22,6 @@
             <img src="./assets/pictures/Snackear_logo_3.png" alt="Logo de la empresa" class="logo-image">
         </div>
         
-   
         <nav class="navbar">
             <div class="nav-container">
                 <ul class="nav-menu">
@@ -40,18 +39,20 @@
                     </li>
                     <li class="nav-item">
                         <i class="bi bi-cart"></i> 
-                        <a class="nav-button" id="cartBoton">Mi carro 
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
-                            <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                        <a class="nav-button" id="cartButton"> Mi carro
+                        <!--<a class="nav-button" href="./pages/carrito.html" onclick="handleCart()">Mi carro   -->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24">
+                                <path fill="currentColor"
+                                d="M16 18a2 2 0 0 1 2 2a2 2 0 0 1-2 2a2 2 0 0 1-2-2a2 2 0 0 1 2-2m0 1a1 1 0 0 0-1 1a1 1 0 0 0 1 1a1 1 0 0 0 1-1a1 1 0 0 0-1-1m-9-1a2 2 0 0 1 2 2a2 2 0 0 1-2 2a2 2 0 0 1-2-2a2 2 0 0 1 2-2m0 1a1 1 0 0 0-1 1a1 1 0 0 0 1 1a1 1 0 0 0 1-1a1 1 0 0 0-1-1M18 6H4.27l2.55 6H15c.33 0 .62-.16.8-.4l3-4c.13-.17.2-.38.2-.6a1 1 0 0 0-1-1m-3 7H6.87l-.77 1.56L6 15a1 1 0 0 0 1 1h11v1H7a2 2 0 0 1-2-2a2 2 0 0 1 .25-.97l.72-1.47L2.34 4H1V3h2l.85 2H18a2 2 0 0 1 2 2c0 .5-.17.92-.45 1.26l-2.91 3.89c-.36.51-.96.85-1.64.85" />
                             </svg>
+                            <span id="cart-count" class="count">0</span> 
                         </a>    
-                    </li>
+                    </li> 
                 </ul>
-             
-
         </nav>
     </header>
 
+    </div>
     <main>
 
         <!-- Aca comienza la sección superior de encabezado -->
@@ -121,187 +122,153 @@
                     <h3>Nueces</h3>
                     <img src="./assets/pictures/Nueces_2.jpg" alt="">
                     <p>Nueces sin pelar en bolsas de 500 gr.</p>
-                    <h4 precio>$ 10000,00</h4>
+                    <h4>$ 5000,00</h4>
                     <br>
-                    <a href="./pages/auto.html">
                     <button>Comprar  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
                             <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
-                            </svg></button>
-                    </a>
+                            </svg>
+                    </button>
                 </div>
 
                 <div class="card" data-id="producto_0002">
                     <h3>Almendras</h3>
                     <img src="./assets/pictures/Almendras_1.jpg" alt="">
                     <p>Almendras peladas y tostadas en bolsas de 500 gr.</p>
-                    <h4 precio>$ 12000,00</h4>
+                    <h4>$ 12000,00</h4>
                     <br>
-                    <a href="./pages/auto.html">
                     <button>Comprar  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
                             <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
-                            </svg></button>
-                    </a>
+                            </svg>
+                    </button>
                 </div>
 
                 <div class="card" data-id="producto_0003">
                     <h3>Avellanas</h3>
                     <img src="./assets/pictures/Avellanas_1.jpg" alt="">
                     <p>Avellanas peladas y tostadas en bolsas de 250 gr.</p>
-                    <h4 precio>$ 8500,00</h4>
+                    <h4>$ 8500,00</h4>
                     <br>
-                    <a href="./pages/auto.html">
                     <button>Comprar  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
                             <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
-                            </svg></button>
-                    </a>
+                            </svg>
+                    </button>
                 </div>
 
                 <div class="card" data-id="producto_0004">
                     <h3>Pistachos</h3>
                     <img src="./assets/pictures/Pistachos_1.jpg" alt="">
                     <p>Pistachos sin pelar en bolsas de 250 gr.</p>
-                    <h4 precio>$ 8000,00</h4>
+                    <h4>$ 8000,00</h4>
                     <br>
-                    <a href="./pages/auto.html">
                     <button>Comprar  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
                             <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
-                            </svg></button>
-                    </a>
+                            </svg>
+                    </button>
                 </div>
 
                 <div class="card" data-id="producto_0005">
                     <h3>Castañas de cajú</h3>
                     <img src="./assets/pictures/Caju_1.jpg" alt="">
                     <p>Castañas de cajú peladas en bolsas de 250gr.</p>
-                    <h4 precio>$ 4000,00</h4>
+                    <h4>$ 4000,00</h4>
                     <br>
-                    <a href="./pages/auto.html">
                     <button>Comprar  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
                             <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
-                            </svg></button>
-                    </a>
+                            </svg>
+                    </button>
                 </div>
 
                 <div class="card" data-id="producto_0006">
                     <h3>Maní</h3>
                     <img src="./assets/pictures/Mani_1.jpg" alt="">
                     <p>Maní tostado sin pelar en bolsas de 500 gr.</p>
-                    <h4 precio>$ 3000,00</h4>
+                    <h4>$ 3000,00</h4>
                     <br>
-                    <a href="./pages/auto.html">
                     <button>Comprar  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
                             <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
-                            </svg></button>
-                    </a>
+                            </svg>
+                    </button>
                 </div>
                 
                 <div class="card" data-id="producto_0007">
                     <h3>Frutillas</h3>
                     <img src="./assets/pictures/Frutillas_1.jpg" alt="">
                     <p>Frutillas congeladas en bolsas de 500 gr.</p>
-                    <h4 precio>$ 6000,00</h4>
+                    <h4>$ 6000,00</h4>
                     <br>
-                    <a href="./pages/auto.html">
                     <button>Comprar  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
                             <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
-                            </svg></button>
-                    </a>
+                            </svg>
+                    </button>
                 </div>
                                 
                 <div class="card" data-id="producto_0008">
                     <h3>Arandanos</h3>
                     <img src="./assets/pictures/Arandanos_1.jpg" alt="">
                     <p>Arandanos congelados en bolsas de 500 gr.</p>
-                    <h4 precio>$ 8000,00</h4>
+                    <h4>$ 8000,00</h4>
                     <br>
-                    <a href="./pages/auto.html">
                     <button>Comprar  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
                             <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
-                            </svg></button>
-                    </a>
+                            </svg>
+                    </button>
                 </div>
                                 
                 <div class="card" data-id="producto_0009">
                     <h3>Frambuesas</h3>
                     <img src="./assets/pictures/Frambuesas_1.jpg" alt="">
                     <p>Frambuesas congeladas en bolsas de 500 gr.</p>
-                    <h4 precio>$ 10000,00</h4>
+                    <h4>$ 10000,00</h4>
                     <br>
-                    <a href="./pages/auto.html">
                     <button>Comprar  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
                             <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
-                            </svg></button>
-                    </a>
+                            </svg>
+                    </button>
                 </div>
                                 
                 <div class="card" data-id="producto_0010">
                     <h3>Chips de chocolate negro</h3>
                     <img src="./assets/pictures/Chips_1.jpg" alt="">
                     <p>Chips de chocolate negro en bolsas de 500 gr.</p>
-                    <h4 precio>$ 25000,00</h4>
+                    <h4>$ 25000,00</h4>
                     <br>
-                    <a href="./pages/auto.html">
                     <button>Comprar  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
                             <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
-                            </svg></button>
-                    </a>
+                            </svg>
+                    </button>
                 </div>
                                 
                 <div class="card" data-id="producto_0011">
                     <h3>Chips de chocolate blanco</h3>
                     <img src="./assets/pictures/Chips_blanc.jpg" alt="">
-                    <p producto>Chips de chocolate blanco en bolsas de 500 gr.</p>
-                    <h4 precio>$ 22000,00</h4>
+                    <p>Chips de chocolate blanco en bolsas de 500 gr.</p>
+                    <h4>$ 22000,00</h4>
                     <br>
-                    <a href="./pages/auto.html">
                     <button>Comprar  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
                             <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
-                            </svg></button>
-                    </a>
+                            </svg>
+                    </button>
                 </div>
                                 
                 <div class="card" data-id="producto_0012">
                     <h3>Chocolate en barra</h3>
                     <img src="./assets/pictures/Choc_bar.jpg" alt="">
                     <p>Barra de chocolate 60% cacao de 500 gr.</p>
-                    <h4 precio>$ 27000,00</h4>
+                    <h4>$ 27000,00</h4>
                     <br>
-                    <a href="./pages/auto.html">
                     <button>Comprar  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
                             <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
-                            </svg></button>
-                    </a>
+                            </svg>
+                    </button>
                 </div>
         </section>
-
-               <!-- Luego borrar este listado una vez solucionado lo del carrito--> 
-
-        <button id="cartBoton">Mostrar Lista</button>
-
-<div id="miVentanaEmergente" class="ventana-emergente">
-  <div class="contenido">
-    
-    <h2>Mi Lista</h2>
-    <ul>
-      <li>Elemento 1</li>
-      <li>Elemento 2</li>
-      <li>Elemento 3</li>
-    </ul>
-    <button id="cerrarVentana">Cerrar</button>
-  </div>
-</div>
-
-<div id="carrito">
- <h2>Carrito de Compras</h2>
- <ul id="lista-carrito"></ul>
- <button id="vaciar-carrito">Vaciar Carrito</button>
-</div>
 
 
             <!-- Aqui comienza el sector de ubicaciones con Iframes insertando mapas de google maps -->
         <br><br>
         <hr>
-        <section>      
+        <section>    
+
     
             <h5 id="sucursales"></h5>
                      <video autoplay loop muted playsinline id="video-background">
@@ -419,6 +386,51 @@
         </div>
 
 
+  <!-- Ventana emergente -->
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <h2>Contenido del Carrito</h2>
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>Producto</th>
+                        <th>Precio</th>
+                        <th>Cantidad</th>
+                        <th>Precio parcial</th>
+                    </tr>
+                </thead>
+                <tbody id="carritoTableBody">
+                    <!-- Los datos se llenarán dinámicamente desde localStorage -->
+                </tbody>
+            </table>
+            <div id="contenedorResultado"></div>
+              
+                <div id="emptyMessage" class="empty-message" style="display: none;">
+                    <p>El carrito está vacío</p>
+            
+                </div>  
+                <nav class="navbar">
+                    <div class="nav-container">
+                        <ul class="nav-menu">
+                            <li class="nav-item">
+                                <button id="vaciarCarro" class="btn btncierre">Vaciar carrito</button>
+                            </li>
+                            <li class="nav-item">
+                                <button id="comprar" class="btn btncierre">Comprar</button>
+                            </li>
+                            <li class="nav-item">
+                                <button id="closePopup" class="btn btncierre">Cerrar Ventana</button>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+    </div>
+<div id="mensajeCompra" class="mensaje-compra" style="display: none;">
+  <p id="textoGracias"></p>
+  <button id="cerrarMensajeCompra" class="btn">Cerrar</button>
+</div>
+
+
     </main>
 
     <footer>
@@ -460,15 +472,14 @@
         <p>© 2025 "Todos los derechos reservados por Snackear Argentina"</p>
     </footer>
 
-    <script src="./JS/TEST.JS"></script>
     <script src="./JS/Sticky.js"></script>
-    <script src="./JS/carrito.js"></script>
+    <script src="./JS/main.js"></script>
+|   <script src="./JS/emerg.js"></script>
+
+
 
 
 </body>
-
-
-
 
 
 </html>
